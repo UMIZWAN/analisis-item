@@ -9,21 +9,7 @@
 </head>
 <body class="min-h-screen bg-base-200">
 
-    {{-- Top bar --}}
-    <nav class="navbar bg-blue-700 text-white shadow-md px-6">
-        <div class="flex-1">
-            <span class="text-xl font-bold">Analisis Item</span>
-        </div>
-        <div class="flex-none flex items-center gap-3">
-            @auth
-                <span class="text-sm opacity-90">{{ auth()->user()->name }}</span>
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-                    <button type="submit" class="btn btn-sm btn-ghost">Log Keluar</button>
-                </form>
-            @endauth
-        </div>
-    </nav>
+    @include('partials.navbar')
 
     <main class="max-w-350 mx-auto p-6 space-y-6">
 
