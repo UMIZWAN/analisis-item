@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Log Masuk &mdash; Analisis Item</title>
+    <title>Log Masuk &mdash; Analysis Subject</title>
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="min-h-screen flex items-center justify-center p-4 bg-linear-to-br from-slate-50 via-white to-blue-50">
@@ -14,7 +16,7 @@
         <div class="bg-linear-to-br from-blue-700 to-blue-500 text-white p-10 flex flex-col justify-center">
             <span class="badge badge-lg bg-white/15 text-white border-0 mb-6 w-fit">Platform Pentaksiran</span>
 
-            <h1 class="text-4xl font-bold mb-4">Analisis Item</h1>
+            <h1 class="text-4xl font-bold mb-4">Analysis Subject</h1>
 
             <p class="text-white/85 mb-8 leading-relaxed max-w-sm">
                 Nilai kualiti soalan, indeks kesukaran dan diskriminasi &mdash; semuanya dalam satu platform.
@@ -45,7 +47,7 @@
         {{-- Right: sign-in form --}}
         <div class="p-10 flex flex-col justify-center">
             <h2 class="text-3xl font-bold mb-2">Log Masuk</h2>
-            <p class="text-base-content/60 mb-6">Gunakan akaun Analisis Item anda untuk meneruskan.</p>
+            <p class="text-base-content/60 mb-6">Gunakan akaun Analysis Subject anda untuk meneruskan.</p>
 
             @if ($errors->any())
                 <div role="alert" class="alert alert-error text-sm mb-4">
